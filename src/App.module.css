@@ -1,5 +1,6 @@
+/* Default styles for .calculator, body, heading, etc. */
+
 body {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +13,30 @@ body {
   width: 300px;
   height: 400px;
   border-radius: 5px;
-
+  margin: 0 auto;
+  /* Center horizontally by using margin auto */
 }
 
+h1 {
+  text-align: center;
+  /* Center the heading text */
+}
+
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens (e.g., tablets) */
-.calculator {
-    width: 70%; /* Adjust width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
+
+  /* Adjust styles for smaller screens */
+  .calculator {
+    width: 70%;
+    /* Adjust width for smaller screens */
+    height: auto;
+    /* Allow height to adjust based on content */
+    margin: 0 auto;
+    /* Center horizontally on smaller screens */
+  }
+
+  h1 {
+    text-align: center;
+    /* Center the heading text in smaller screens */
   }
 }
