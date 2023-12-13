@@ -1,0 +1,20 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #456b8f;
+    height: 330px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .button {
+    width: 55px;
+    height: 40px;
+    border-radius: 20px;
+    background: #ff9c08;
+    font-size: larger;
+    margin: 8px;
+    
+    box-shadow: 2px solid  black;
+  }
