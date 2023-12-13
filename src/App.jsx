@@ -1,3 +1,5 @@
+// app.jsx
+
 import Display from "./components/Display";
 import ButtonsContainer from "./components/ButtonsContainer";
 import styles from "./App.module.css";
@@ -12,6 +14,9 @@ function App() {
     } else if (buttonText === "=") {
       const result = eval(calVal);
       setCalVal(result);
+    } else if (buttonText === "DEL") {
+      // Remove the last character from calVal
+      setCalVal(calVal.slice(0, -1));
     } else {
       const newDisplayValue = calVal + buttonText;
       setCalVal(newDisplayValue);
@@ -20,11 +25,11 @@ function App() {
 
   return (
     <>
-    <h1>  Calculator  App</h1><br/>
-    <div className={styles.calculator}>
-      <Display displayValue={calVal}></Display>
-      <ButtonsContainer onButtonClick={onButtonClick}></ButtonsContainer>
-    </div>
+      <h1>Calculator App</h1>
+      <div className={styles.calculator}>
+        <Display displayValue={calVal}></Display>
+        <ButtonsContainer onButtonClick={onButtonClick}></ButtonsContainer>
+      </div>
     </>
   );
 }

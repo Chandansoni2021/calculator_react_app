@@ -14,3 +14,11 @@ body {
   border-radius: 5px;
 
 }
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., tablets) */
+.calculator {
+    width: 70%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}

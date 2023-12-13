@@ -18,3 +18,13 @@
     
     box-shadow: 2px solid  black;
   }
+  @media screen and (max-width: 768px) {
+  .buttonsContainer {
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .button {
+    width: 45px; /* Adjust button width for smaller screens */
+    height: 35px; /* Adjust button height for smaller screens */
+  }
+}
