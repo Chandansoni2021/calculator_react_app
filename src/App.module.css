@@ -7,6 +7,8 @@ body {
   margin: 0;
 }
 
+
+
 .calculator {
   border: 4px solid rgba(90, 90, 90);
   width: 300px;
@@ -17,7 +19,11 @@ body {
 
 @media screen and (max-width: 768px) {
   /* Adjust styles for smaller screens (e.g., tablets) */
+  h1{
+    margin-left:80px;
+  }
 .calculator {
+  margin-left:80px;
     width: 70%; /* Adjust width for smaller screens */
     height: auto; /* Allow height to adjust based on content */
   }
